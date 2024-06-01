@@ -1,26 +1,22 @@
 body {
-    background-color: #fff;
-    color: #333;
-    font:
-        1.2em / 1.5 Helvetica Neue,
-        Helvetica,
-        Arial,
-        sans-serif;
-    padding: 1em;
-    margin: 0;
+  background-color: #fff;
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0;
 }
 
 .vertical {
-    writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 
 .box {
-    width: 150px;
-    height: 150px;
-    border-block-start: 5px solid rebeccapurple;
-    border-inline-end: 5px solid grey;
-    border-block-end: 5px dotted red;
-    border-inline-start: 5px dotted blue;
-    padding-block-start: 40px;
-    margin-block-end: 30px;
+  width: 150px;
+  height: 150px;
+  border-block-start: 5px solid rebeccapurple;
+  border-inline-end: 5px solid grey;
+  border-block-end: 5px dotted red;
+  border-inline-start: 5px dotted blue;
+  padding-block-start: 40px;
+  margin-block-end: 30px;
 }

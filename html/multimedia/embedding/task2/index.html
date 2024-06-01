@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media/embedding: Task 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Media/embedding: Task 2</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <h1>Video embed</h1>
-        <video controls width="320" height="240" muted>
-            <source src="media/video.mp4" type="video/mp4">
-            <source src="media/video.webm" type="video/webm">
-            <track kind="subtitles" src="media/subtitles_en.vtt" srclang="en" label="English">
-            <p>Your browser doesn't support the video file. You can download the video file in <a href="media/video.mp4" download="video.mp4">MP4 format
-                    (834kB)</a> or <a href="media/video.webm" download="video.webm">WebM format (330.6kB)</a> instead.</p>
-        </video>
-    </body>
-
+  <body>
+    <h1>Video embed</h1>
+    <video controls width="320" height="240" muted>
+      <source src="media/video.mp4" type="video/mp4" />
+      <source src="media/video.webm" type="video/webm" />
+      <track
+        kind="subtitles"
+        src="media/subtitles_en.vtt"
+        srclang="en"
+        label="English"
+      />
+      <p>
+        Your browser doesn't support the video file. You can download the video
+        file in
+        <a href="media/video.mp4" download="video.mp4">MP4 format (834kB)</a> or
+        <a href="media/video.webm" download="video.webm"
+          >WebM format (330.6kB)</a
+        >
+        instead.
+      </p>
+    </video>
+  </body>
 </html>
