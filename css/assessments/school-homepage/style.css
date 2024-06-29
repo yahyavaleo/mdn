@@ -1,0 +1,184 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@font-face {
+  font-family: "Inter";
+  src: url("static/Inter.woff2") format("woff2"),
+    url("static/Inter.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* Root */
+
+html {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 10px;
+}
+
+/* Headings */
+
+h1,
+h2 {
+  font-family: Inter, Arial, sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Paragraphs and Lists */
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+p,
+li {
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.05rem;
+}
+
+/* Links */
+
+a {
+  outline: none;
+}
+
+a:link {
+  color: hsl(0, 29%, 53%);
+}
+
+a:visited {
+  color: purple;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: 1px solid hsl(0, 29%, 53%);
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: hsl(0, 29%, 53%);
+  color: white;
+}
+
+a:active {
+  text-decoration: none;
+  background-color: hsl(0, 29%, 34%);
+  color: white;
+}
+
+a[href^="http"]::after {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.5em;
+  content: "";
+
+  background-image: url("assets/external-link-52.png");
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* Lists */
+
+ul,
+ol {
+  margin: 1.6rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-latin;
+}
+
+/* Navbar */
+
+nav li {
+  margin: 2rem 0;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  width: 14rem;
+  line-height: 3;
+  border: 1px solid hsl(0, 29%, 53%);
+
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+}
+
+nav a:visited {
+  color: hsl(0, 29%, 53%);
+}
+
+nav a:hover,
+nav a:active {
+  color: white;
+}
